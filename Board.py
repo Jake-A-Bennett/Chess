@@ -27,7 +27,7 @@ class Board():
 
                 #This variable probably doens't need to be there
                 coordinate = [(row+self.pos_x)*self.size, (column + self.pos_y)*self.size, self.size, self.size]
-                self.board[row][column] = [pygame.Rect(coordinate[0], coordinate[1], coordinate[2], coordinate[3]), color]
+                self.board[row][column] = [pygame.Rect(coordinate[0], coordinate[1], coordinate[2], coordinate[3]), color, None]
 
     def draw_board(self, surface):
         for row in range(len(self.board)):
