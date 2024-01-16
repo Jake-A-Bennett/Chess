@@ -53,7 +53,6 @@ while running:
         if event.type == pygame.MOUSEBUTTONUP and touched() != None:
             try:
                 pressed_button.valid_move(touched_rect_cord(), pressed_button)
-                pressed_button.valid_move(touched_rect_cord(), pressed_button)
                 board.board[pressed_button.square[0]][pressed_button.square[1]][2] = None
                 board.board[touched_rect_cord()[0]][touched_rect_cord()[1]][2] = pressed_button
                 pressed_button.square = touched_rect_cord()
